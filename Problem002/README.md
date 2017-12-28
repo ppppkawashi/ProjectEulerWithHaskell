@@ -9,3 +9,5 @@
 数列の項の値が400万以下の, 偶数値の項の総和を求めよ.
 
 Note:この問題は最近更新されました. お使いのパラメータが正しいかどうか確認してください.
+
+http://odz.sakura.ne.jp/projecteuler/index.php?cmd=read&page=Problem%202
