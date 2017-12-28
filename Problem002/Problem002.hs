@@ -7,4 +7,4 @@ fibo m = [1,2] ++ body m 1 2
          | otherwise = []
 
 main :: IO ()
-main = print . sum $ filter even (fibo 4000000)
+main = print . sum . filter even $ fibo 4000000
