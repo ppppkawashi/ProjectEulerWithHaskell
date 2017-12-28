@@ -7,4 +7,4 @@ fibo m = [1,2] ++ body m 1 2
          | otherwise = []
 
 main :: IO ()
-main = print $ fibo 15
+main = print . sum $ filter (\x -> x `mod` 2 == 0 ) (fibo 4000000)
