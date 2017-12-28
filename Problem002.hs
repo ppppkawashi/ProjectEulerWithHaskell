@@ -1,6 +1,10 @@
-fibo m x y
-    | x == 1 || y == 2 = [x,y] ++ fibo m y (x+y)
-    | x + y < m = [x+y] ++ fibo m y (x+y)
-    | otherwise = []
+fibo :: Int -> [Int]
+fibo m = [1,2] ++ body m 1 2
+    where
+        body :: Int -> Int -> Int -> [Int]
+        body m x y
+         | x + y < m = [x+y] ++ body m y (x+y)
+         | otherwise = []
 
-main = print $ fibo 15 1 2
+main :: IO ()
+main = print $ fibo 15
